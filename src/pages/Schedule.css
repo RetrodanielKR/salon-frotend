@@ -1,0 +1,165 @@
+/* General styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #4fc2d6;
+}
+
+
+.schedule-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: #4fd9f1;
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  text-align: center;
+  border-radius: 8px 8px 0 0;
+}
+
+.navbar p {
+  margin: 5px 0;
+}
+
+.logout-button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #1d3ed4;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+/* Calendar styles */
+.calendar {
+  margin: 20px 0;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.calendar-weekdays,
+.calendar-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.calendar-weekday,
+.calendar-day {
+  width: calc(100% / 7 - 10px);
+  margin: 5px;
+  text-align: center;
+  padding: 10px 0;
+  background-color: #f1f1f1;
+  border-radius: 4px;
+  cursor: pointer;
+  color: black;
+}
+
+.calendar-day.past-day {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.calendar-day:not(.past-day):hover {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Time, Service, Employee selection */
+select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background-color: white;
+  color: black;
+}
+
+/* Reservation button */
+.reserve-button {
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  background-color: #ccc;
+  border: none;
+  border-radius: 4px;
+  cursor: not-allowed;
+  font-size: 1.2em;
+  transition: background-color 0.3s ease;
+}
+
+.reserve-button.active {
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+/* Reservation modal */
+.reservation-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 400px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.reservation-content {
+  text-align: center;
+  color: black;
+}
+
+.reservation-content h3 {
+  margin-top: 0;
+}
+
+.reservation-content button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .calendar-weekday,
+  .calendar-day {
+    width: calc(100% / 7 - 5px);
+    margin: 2px;
+    padding: 8px 0;
+  }
+
+  .calendar-header {
+    font-size: 1em;
+  }
+
+  .reserve-button {
+    font-size: 1em;
+  }
+}

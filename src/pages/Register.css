@@ -1,0 +1,89 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #ffffff91;
+    font-family: Arial, sans-serif;
+    color: #000;
+  }
+  
+  .register-container {
+    width: 100%;
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 35px;
+    background: #8ce4f3;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    border-radius: 8px;
+  }
+  
+  .register-container h2 {
+    margin-bottom: 20px;
+    color: #000;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  form > div {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  button {
+    padding: 10px;
+    background: #000000;
+    color: #000000;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+  }
+  
+  button:hover {
+    background: #0a3ce2;
+  }
+  
+  button:disabled {
+    background: #ffffff;
+    cursor: not-allowed;
+  }
+  
+  .register-link {
+    margin-top: 20px;
+  }
+  
+  .register-link p {
+    font-size: 14px;
+    color: #ffffff;
+  }
+  
+  .register-link a {
+    color: #000000;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .register-link a:hover {
+    color: #0800ff;
+  }
